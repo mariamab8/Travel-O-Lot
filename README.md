@@ -2,7 +2,7 @@
 
 #Description In this project we used a form to ask users were they live and where they want to go. Once they search, they can the view the current weather and the 5 day forecast for where they want to go. If they don't like the weather there, they can serach again. They can click on past cities to go back and look at the weather again. To get flight data users will need to click on the destination city again. The flight data will show them one flight that goes from the most popular airport in their area to the most popular airport in the destination area.
 
-#Live Link https://elangworth.github.io/camps-a-lot/
+#Live Link 
 
 #User Story As someone who likes to travel last minute, I would like to be able to search for a destination and see what the weather is going to be like in the next few days. Then I would like to see if there is a flight from where I am to that destination.
 
