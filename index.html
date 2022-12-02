@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Flight Tonight</title>
+</head>
+<body>
+    <header class="bd-navbar navbar">
+        <div class="navbar-brand">
+           <!-- <img class="navbar-item is-hidden-mobile" src="./assets/img/Flight Tonight.png" alt="flight_tonight_logo" id="logo">-->
+            <h1 class="navbar-content has-text-centered" id="welcome">Welcome to Flight Tonight</h1>
+        </div>    
+    </header>
+    <div class="outside-container">
+        <div class="top-bar">
+            <form class = "form" id="city-form">
+                <h2 id="question-1">Where would you like to depart from?</h2>
+            <div>
+                <label>Enter a City name below!</label>
+                <div>
+                    <input id="home-city" type="text"></input>
+                </div>
+            </div>
+                <h2 id="question-2">Where do you want to fly to?</h2>
+                <div>
+                    <label>Enter a destination City!</label>
+                    <div>
+                        <input id="destination-city" type="text"></input>
+                    </div>
+                </div>
+                <button id = "search-button" type = "submit" >Search</button>
+            </form>
+        </div>
+        <hr>
+        <div class="box" id="cities-container">
+            <h1 id="cities-searched-title">Cities Searched</h1>
+            <p>click on the city to see flight information</p>
+            <ul id="cities-searched-list">Destintion Cities</ul>
+        </div>
+        <hr>
+        <div class = "flight-container">
+            <h1 id="destination-city-message"></h1>
+            <p id="flight-message"></p>
+            <p id = "no-destination-city"></p>
+
+        </div>
+        <hr>
+        <div id="selected-city-weather-container">
+            <h1 id="current-weather">Current Weather</h1>
+            <h2 id="selected-city"></h2>
+            <img src="https://openweathermap.org/img/wn" alt="image of current weather" id="city-weather-image"/>
+            <p id="temperature">Temperature: </p>
+            <p id="wind">Wind: </p>
+            <p id="humidity">Humidity: </p>
+        </div>
+        <hr>
+        <div class="box" id="five-day-forecast-container">
+            <h1 id="five-day-forecast">5 Day Forecast</h1>
+            <div class="columns is-mobile">
+                <div class="column" id="day-1">
+                    <h3 id="tomorrow-forecast-date"></h3>
+                    <img src="https://openweathermap.org/img/wn/" alt="image of current weather" id="day-1-weather-image"/>
+                    <p id="tomorrow-temperature">Temperature: </p>
+                    <p id="tomorrow-wind">Wind: </p>
+                    <p id="tomorrow-humidity">Humidity: </p>
+                </div>
+                <div class="column" id="day-2">
+                    <h3 id="day-2-forecast-date"></h3>
+                    <img src="https://openweathermap.org/img/wn/" alt="image of current weather" id="day-2-weather-image"/>
+                    <p id="day-2-temperature">Temperature: </p>
+                    <p id="day-2-wind">Wind: </p>
+                    <p id="day-2-humidity">Humidity: </p>
+                </div>
+                <div class="column" id="day-3">
+                    <h3 id="day-3-forecast-date"></h3>
+                    <img src="https://openweathermap.org/img/wn/" alt="image of current weather" id="day-3-weather-image"/>
+                    <p id="day-3-temperature">Temperature: </p>
+                    <p id="day-3-wind">Wind: </p>
+                    <p id="day-3-humidity">Humidity: </p>
+                </div>
+                <div class="column" id="day-4">
+                    <h3 id="day-4-forecast-date"></h3>
+                    <img src="https://openweathermap.org/img/wn/" alt="image of current weather" id="day-4-weather-image"/>
+                    <p id="day-4-temperature">Temperature: </p>
+                    <p id="day-4-wind">Wind: </p>
+                    <p id="day-4-humidity">Humidity: </p>
+                </div>
+                <div class="column" id="day-5">
+                    <h3 id="day-5-forecast-date"></h3>
+                    <img src="https://openweathermap.org/img/wn/" alt="image of current weather" id="day-5-weather-image"/>
+                    <p id="day-5-temperature">Temperature: </p>
+                    <p id="day-5-wind">Wind: </p>
+                    <p id="day-5-humidity">Humidity: </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Weather data provided by <a href="https://openweathermap.org/">OpenWeather</a></p>
+            <p>Airport Code Data provided by <a href="https://airlabs.co/">AirLabs</a></p>
+        </footer>
+    </div>
+</body>
+<script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="assets/js/script.js"></script>
+</html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
