@@ -1,0 +1,21 @@
+body {
+    background-color: burlywood;
+    text-align: center;
+}
+
+h1{
+    color: brown;
+}
+
+p{
+    color: brown;
+    text-indent: 20px;
+}
+.card{
+    
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
